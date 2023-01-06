@@ -1,0 +1,39 @@
+
+<div class="header">
+  <div class="header-left">
+    <p>Logo</p>
+  </div>
+  <div class="header-spacer"></div>
+  <div class="header-right">
+    <div class="{{ url == 'home' ? 'button-header button-active' : 'button-header' }}" (click)="navigateTo('home')">
+      <span class="material-symbols-outlined">
+        home
+      </span>
+      <p>&nbsp;Home</p>
+    </div>
+    <div class="{{ url == 'about' ? 'button-header button-active' : 'button-header' }}" (click)="navigateTo('about')">
+      <span class="material-symbols-outlined">
+        groups
+      </span>
+      <p>&nbsp;About us</p>
+    </div>
+    <div class="button-header">
+      <span class="material-symbols-outlined">
+        code
+      </span>
+      <p>&nbsp;Our Projects</p>
+    </div>
+    <div class="button-header">
+      <span class="material-symbols-outlined">
+        share
+      </span>
+      <p>&nbsp;Social Media</p>
+    </div>
+  </div>
+</div>
+<div class="modal-menu projects">
+
+</div>
+<div class="modal-menu social">
+
+</div>

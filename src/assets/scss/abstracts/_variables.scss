@@ -1,0 +1,48 @@
+
+/*
+*   Colors
+*/
+
+$primary-color: #000;
+$primary-color-hover: #000;
+
+$secondary-color: #123;
+$secondary-color-hover: #123;
+
+$accent-color: #225577;
+$accent-color-hover: #225577;
+
+$background-default-color: #987;
+$background-card-color: #765;
+
+$text-color: #555;
+
+$shadow-color: #142434;
+$border-color: #163656;
+
+/*
+*   Size
+*/
+
+$header-height: calc(2em + 2vh);
+
+$font-size-header: 1.35em;
+$font-size-h1: 1.2em;
+$font-size-h2: 1.1em;
+$font-size-h3: 1.05em;
+$font-size-p: 0.95em;
+
+
+/*
+*   Box Shadows
+*/
+
+$box-shadow-card: $shadow-color 1.95px 1.95px 2.6px;
+$box-shadow-header: $shadow-color 0px 1.95px 2.6px;
+
+
+/*
+*   Borders
+*/
+$border-size: 1px solid $border-color;
+$boder-radius: 3px;

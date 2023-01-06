@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'SteelCodeWeb';
+
+
+  public title = 'SteelCode Team';
+
+
+  public static jsonEnURL = '../assets/i18n/en.json/'
+
+
 }
