@@ -1,0 +1,48 @@
+<section id="contact" class="contact section">
+  <div class="container">
+
+    <p class="section-label">// 07 · contact</p>
+    <h2 class="section-title">Find us <span>online</span></h2>
+
+    @if (data) {
+
+      <!-- Links principales -->
+      <div class="contact__primary">
+        @for (link of primaryLinks; track link.label) {
+          <a [href]="link.url" target="_blank" rel="noopener"
+             class="contact__main-link">
+            <div class="contact__main-link-body">
+              <span class="contact__main-link-label">{{ link.label }}</span>
+              <span class="contact__main-link-sub">{{ link.sublabel }}</span>
+            </div>
+            <span class="contact__main-link-arrow">→</span>
+          </a>
+        }
+      </div>
+
+      <!-- Links secundarios -->
+      <div class="contact__secondary">
+        @for (link of secondaryLinks; track link.label) {
+          <a [href]="link.url" target="_blank" rel="noopener"
+             class="contact__link">
+            <span class="contact__link-label">{{ link.label }}</span>
+            <span class="contact__link-sub">{{ link.sublabel }}</span>
+          </a>
+        }
+      </div>
+
+      <!-- Soporte -->
+      <div class="contact__support">
+        <p class="section-label">// support</p>
+        <p class="contact__support-text">{{ data.supportText }}</p>
+        <a href="https://ko-fi.com/steelcodeteam"
+           target="_blank" rel="noopener"
+           class="contact__support-btn">
+          Donate on Ko-fi →
+        </a>
+      </div>
+
+    }
+
+  </div>
+</section>

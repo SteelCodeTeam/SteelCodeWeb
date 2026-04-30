@@ -1,0 +1,8 @@
+{
+  "stats": [
+    { "value": 60000, "suffix": "K+", "label": "Downloads",       "description": "across all projects"     },
+    { "value": 300,   "suffix": "+",  "label": "Community",       "description": "members in Discord"       },
+    { "value": 1000,   "suffix": "K+",  "label": "Commits",         "description": "and counting"             },
+    { "value": 7,     "suffix": "",  "label": "Active Projects", "description": "open source & maintained" }
+  ]
+}

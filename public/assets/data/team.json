@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "id": "rudahee",
+      "handle": "rudahee",
+      "role": "Co-founder · Backend & Modding",
+      "bio": "Java backend dev with 5+ years in enterprise. Solid experience in frontend skills.",
+      "initials": "RH",
+      "color": "#8aaa3c",
+      "socials": [
+        { "platform": "GitHub",        "url": "https://github.com/rudahee",               "label": "GH" },
+        { "platform": "StackOverflow", "url": "https://stackoverflow.com/users/rudahee",  "label": "SO" }
+      ]
+    },
+    {
+      "id": "tobibusfate",
+      "handle": "tobibusfate",
+      "role": "Co-founder · Backend & Modding",
+      "bio": "Java backend dev with 1+ years. Some experience with a lot of programming languages!",
+      "initials": "TB",
+      "color": "#6a8aff",
+      "socials": [
+        { "platform": "GitHub", "url": "https://github.com/tobibusfate", "label": "GH" }
+      ]
+    },
+    {
+      "id": "f4rck",
+      "handle": "F4rck",
+      "role": "Co-founder · Artist · Textures & Visual Assets",
+      "bio": "The creative eye behind SteelCodeTeam's visual identity. Handles textures, illustrations, 3D model and all art-related in our projects.",
+      "initials": "F4",
+      "color": "#e07b54",
+      "socials": []
+    }
+  ]
+}

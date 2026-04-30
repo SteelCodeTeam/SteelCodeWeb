@@ -1,0 +1,16 @@
+{
+  "terminalLines": [
+    "> initializing SteelCodeTeam...",
+    "> loading projects...",
+    "> community: online",
+    "> status: ACTIVE_"
+  ],
+  "label": "// small dev team · FLOSS · Community Driven Projects",
+  "title": "SteelCode",
+  "titleMuted": "Team",
+  "subtitle": "We build Minecraft mods, little games, bots for social media\nand community-driven projects.",
+  "ctas": [
+    { "label": "View on GitHub", "url": "https://github.com/steelcodeteam", "primary": true  },
+    { "label": "Join Discord",   "url": "https://discord.gg/YHqMTRYAMT",   "primary": false }
+  ]
+}

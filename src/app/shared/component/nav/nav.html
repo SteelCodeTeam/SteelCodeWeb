@@ -1,0 +1,49 @@
+<nav class="nav" [class.nav--scrolled]="scrolled">
+  <div class="container nav__inner">
+
+    <!-- Logo -->
+    <button class="nav__logo" (click)="scrollTo('hero')">
+      Steel<span>Code</span>_
+    </button>
+
+    <!-- Links desktop -->
+    <ul class="nav__links">
+      @for (link of links; track link.id) {
+        <li>
+          <button
+            class="nav__link"
+            [class.nav__link--active]="activeSection === link.id"
+            (click)="scrollTo(link.id)">
+            {{ link.label }}
+          </button>
+        </li>
+      }
+    </ul>
+
+    <!-- Burger móvil -->
+    <button class="nav__burger" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen">
+      <span class="nav__burger-line" [class.nav__burger-line--open]="menuOpen"></span>
+      <span class="nav__burger-line" [class.nav__burger-line--open]="menuOpen"></span>
+      <span class="nav__burger-line" [class.nav__burger-line--open]="menuOpen"></span>
+    </button>
+
+  </div>
+
+  <!-- Menú móvil -->
+  <div class="nav__mobile" [class.nav__mobile--open]="menuOpen">
+    <ul class="nav__mobile-links">
+      @for (link of links; track link.id) {
+        <li>
+          <button
+            class="nav__mobile-link"
+            [class.nav__mobile-link--active]="activeSection === link.id"
+            (click)="scrollTo(link.id)">
+            <span class="nav__mobile-index">{{ ($index + 1).toString().padStart(2, '0') }}</span>
+            {{ link.label }}
+          </button>
+        </li>
+      }
+    </ul>
+  </div>
+
+</nav>

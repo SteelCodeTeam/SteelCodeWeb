@@ -1,0 +1,10 @@
+{
+  "links": [
+    { "label": "Discord",  "sublabel": "Main community hub",     "url": "https://discord.gg/YHqMTRYAMT",                   "primary": true  },
+    { "label": "GitHub",   "sublabel": "All our code",           "url": "https://github.com/steelcodeteam",                "primary": true  },
+    { "label": "Twitch",   "sublabel": "Live streams",           "url": "https://twitch.tv/steelcodeteam",                 "primary": false },
+    { "label": "YouTube",  "sublabel": "Videos & showcases",     "url": "https://www.youtube.com/user/steelcodeteam",      "primary": false },
+    { "label": "Twitter",  "sublabel": "Updates & news",         "url": "https://twitter.com/steelcodeteam",               "primary": false }
+  ],
+  "supportText": "You can support us on Twitch or Ko-fi — any donation helps cover server costs (~120€/year) and IDE Pro Plans (~300$/year). We refund anything beyond our annual budget. We're not here for profit."
+}

@@ -1,0 +1,86 @@
+<section id="team" class="team section">
+  <div class="container">
+
+    <p class="section-label">// 05 · team</p>
+    <h2 class="section-title">Who we <span>are</span></h2>
+
+    <div class="team__grid">
+      @for (member of members; track member.id) {
+        <div class="team__card">
+
+          <!-- Avatar -->
+          <div class="team__avatar" [style.--member-color]="member.color">
+            <span class="team__initials">{{ member.initials }}</span>
+          </div>
+
+          <!-- Info -->
+          <div class="team__info">
+            <div class="team__header">
+              <div>
+
+                <span class="team__name">{{ member.handle }}</span>
+              </div>
+              <!-- Socials -->
+              <div class="team__socials">
+                @for (social of member.socials; track social.platform) {
+                  <a [href]="social.url"
+                     target="_blank"
+                     rel="noopener"
+                     class="team__social-link"
+                     [title]="social.platform">
+                    {{ social.label }}
+                  </a>
+                }
+              </div>
+            </div>
+
+            <span class="team__role">{{ member.role }}</span>
+            <p class="team__bio">{{ member.bio }}</p>
+          </div>
+
+        </div>
+      }
+
+      <!-- Card "Join us" -->
+      <div class="team__card team__card--join">
+        <div class="team__avatar team__avatar--empty">
+          <span class="team__initials">?</span>
+        </div>
+        <div class="team__info">
+          <div class="team__header">
+            <div>
+              <h3 class="team__name">You?</h3>
+              <span class="team__name">&#64;unknown</span>
+            </div>
+          </div>
+          <span class="team__role">Contributor · Any role</span>
+          <p class="team__bio">We're always open to collaborators. If you have an idea or want to contribute to any of our projects, drop by the Discord.</p>
+          <a href="https://discord.gg/YHqMTRYAMT"
+             target="_blank"
+             rel="noopener"
+             class="team__join-btn">
+            Join the team →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GitHub stats -->
+    <div class="team__github">
+      <p class="section-label" style="margin-bottom: var(--space-3);">// github activity</p>
+      <div class="team__github-cards">
+        @for (member of members; track member.id) {
+          <div class="team__github-card">
+            <img
+              [src]="'https://github-readme-stats.vercel.app/api?username=' + member.handle + '&show_icons=true&count_private=true&hide_border=true&theme=github_dark&bg_color=2c2c2a&title_color=d4d2c9&text_color=888780&icon_color=8aaa3c'"
+              [alt]="member.handle + ' GitHub stats'"
+              loading="lazy"
+            />
+          </div>
+        }
+      </div>
+    </div>
+
+  </div>
+</section>

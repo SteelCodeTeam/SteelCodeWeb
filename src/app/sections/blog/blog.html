@@ -1,0 +1,50 @@
+<section id="blog" class="blog section section--alt">
+  <div class="container">
+
+    <p class="section-label">// 06 · blog & newsletter</p>
+    <h2 class="section-title">What we've <span>written</span></h2>
+
+    @if (newsletters.length === 0) {
+
+      <div class="blog__empty">
+        <span class="blog__empty-icon">_</span>
+        <p class="blog__empty-title">Nothing here yet</p>
+        <p class="blog__empty-text">
+          We publish occasionally — follow us on GitHub to get notified when something lands.
+        </p>
+        <a href="https://github.com/SteelCodeTeam/SteelCodeNewsletter"
+           target="_blank" rel="noopener"
+           class="blog__empty-link">
+          Watch on GitHub →
+        </a>
+      </div>
+
+    } @else {
+
+      <div class="blog__list">
+        @for (newsletter of newsletters; track newsletter.url; let i = $index) {
+          <a [href]="newsletter.url" target="_blank" rel="noopener"
+             class="blog__item">
+            <span class="blog__item-index">{{ (newsletters.length - i).toString().padStart(2, '0') }}</span>
+            <div class="blog__item-body">
+              <span class="blog__item-date">{{ formatDate(newsletter.date) }}</span>
+              <h3 class="blog__item-title">{{ newsletter.title }}</h3>
+              <p class="blog__item-excerpt">{{ newsletter.resume }}</p>
+            </div>
+            <span class="blog__item-arrow">→</span>
+          </a>
+        }
+      </div>
+
+      <div class="blog__footer">
+        <a href="https://github.com/SteelCodeTeam/SteelCodeNewsletter"
+           target="_blank" rel="noopener"
+           class="blog__all-link">
+          View all posts on GitHub →
+        </a>
+      </div>
+
+    }
+
+  </div>
+</section>

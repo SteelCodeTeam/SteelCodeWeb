@@ -1,0 +1,44 @@
+<section id="stack" class="stack section section--alt">
+  <div class="container">
+
+    <p class="section-label">// 04 · stack</p>
+    <h2 class="section-title">Our <span>skill set</span></h2>
+
+    <!-- Filtros de categoría -->
+    <div class="stack__filters">
+      <button
+        class="stack__filter-btn"
+        [class.stack__filter-btn--active]="activeCategory === 'all'"
+        (click)="setActive('all')">
+        All
+      </button>
+      @for (cat of categories; track cat.id) {
+        <button
+          class="stack__filter-btn"
+          [class.stack__filter-btn--active]="activeCategory === cat.id"
+          (click)="setActive(cat.id)">
+          {{ cat.label }}
+        </button>
+      }
+    </div>
+
+    <!-- Categorías -->
+    <div class="stack__categories">
+      @for (cat of categories; track cat.id) {
+        @if (isVisible(cat.id)) {
+          <div class="stack__category">
+            <p class="stack__category-label">{{ cat.label }}</p>
+            <div class="stack__skills">
+              @for (skill of cat.skills; track skill.name) {
+                <span class="stack__skill" [class.stack__skill--core]="skill.core">
+                  {{ skill.name }}
+                </span>
+              }
+            </div>
+          </div>
+        }
+      }
+    </div>
+
+  </div>
+</section>

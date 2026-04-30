@@ -1,0 +1,63 @@
+<section id="hero" class="hero">
+  <div class="container hero__inner">
+
+    @if (data) {
+
+      <!-- Terminal block -->
+      <div class="hero__terminal">
+        <div class="hero__terminal-bar">
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-title">{{ data.title + data.titleMuted }}:~</span>
+        </div>
+        <div class="hero__terminal-body">
+          @for (line of displayedLines; track $index) {
+            <p class="hero__terminal-line">{{ line }}<span class="hero__cursor">█</span></p>
+          }
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <div class="hero__headline">
+        <p class="hero__label">{{ data.label }}</p>
+        <h1 class="hero__title">
+          {{ data.title }}<span>{{ data.titleMuted }}</span>
+        </h1>
+        <p class="hero__subtitle">{{ data.subtitle }}</p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero__ctas">
+        @for (cta of data.ctas; track cta.label) {
+          <a [href]="cta.url" target="_blank" rel="noopener"
+             class="hero__btn"
+             [class.hero__btn--primary]="cta.primary"
+             [class.hero__btn--ghost]="!cta.primary">
+            {{ cta.label }}
+          </a>
+        }
+      </div>
+
+    } @else {
+
+      <!-- Skeleton mientras carga -->
+      <div class="hero__skeleton">
+        <div class="hero__skeleton-block hero__skeleton-block--tall"></div>
+        <div class="hero__skeleton-lines">
+          <div class="hero__skeleton-block"></div>
+          <div class="hero__skeleton-block hero__skeleton-block--wide"></div>
+          <div class="hero__skeleton-block hero__skeleton-block--short"></div>
+        </div>
+      </div>
+
+    }
+
+    <!-- Scroll hint — siempre visible -->
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">scroll</span>
+    </div>
+
+  </div>
+</section>

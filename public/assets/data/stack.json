@@ -1,0 +1,75 @@
+{
+  "categories": [
+    {
+      "id": "languages", "label": "Languages",
+      "skills": [
+        { "name": "Java",       "core": true  },
+        { "name": "Kotlin",     "core": true  },
+        { "name": "TypeScript", "core": true  },
+        { "name": "Python",     "core": false },
+        { "name": "Go",         "core": false },
+        { "name": "C#",         "core": false },
+        { "name": "LUA",         "core": false },
+        { "name": "C/C++",         "core": false }
+      ]
+    },
+    {
+      "id": "backend", "label": "Backend",
+      "skills": [
+        { "name": "Spring Boot",      "core": true  },
+        { "name": "NeoForge",         "core": true  },
+        { "name": "CS2 Modding Tools","core": true  },
+        { "name": "SQL/PLSQL",        "core": true  },
+        { "name": "Kafka",            "core": false },
+        { "name": "ElasticSearch",    "core": false },
+        { "name": "JPA/Hibernate",    "core": false },
+        { "name": ".NET",             "core": false }
+      ]
+    },
+    {
+      "id": "frontend", "label": "Frontend",
+      "skills": [
+        { "name": "Angular",     "core": true  },
+        { "name": "Sass",        "core": true  },
+        { "name": "React",       "core": false },
+        { "name": "Ionic",       "core": false },
+        { "name": "Material UI", "core": false },
+        { "name": "Polymer.js",  "core": false }
+      ]
+    },
+    {
+      "id": "data", "label": "Databases",
+      "skills": [
+        { "name": "MySQL",      "core": true  },
+        { "name": "MariaDB",    "core": true  },
+        { "name": "PostgreSQL", "core": false },
+        { "name": "MongoDB",    "core": false },
+        { "name": "OracleDB",   "core": false },
+        { "name": "Redis",      "core": false }
+      ]
+    },
+    {
+      "id": "devops", "label": "DevOps",
+      "skills": [
+        { "name": "Docker",     "core": true  },
+        { "name": "Linux",      "core": true  },
+        { "name": "Git",        "core": true  },
+        { "name": "Nginx",      "core": false },
+        { "name": "Jenkins",    "core": false },
+        { "name": "Kubernetes", "core": false },
+        { "name": "AWS/Azure",  "core": false }
+      ]
+    },
+    {
+      "id": "creative", "label": "Creative",
+      "skills": [
+        { "name": "Aseprite",        "core": true  },
+        { "name": "Blockbench",      "core": true  },
+        { "name": "Blender",         "core": false },
+        { "name": "Figma",           "core": false },
+        { "name": "Photoshop",       "core": false },
+        { "name": "DaVinci Resolve", "core": false }
+      ]
+    }
+  ]
+}

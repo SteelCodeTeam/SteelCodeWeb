@@ -1,0 +1,68 @@
+<section id="projects" class="projects section">
+  <div class="container">
+
+    <p class="section-label">// 03 · projects</p>
+    <h2 class="section-title">What we<span>'re building</span></h2>
+
+    <!-- Filtros por tag -->
+    <div class="projects__filters">
+      @for (tag of allTags; track tag) {
+        <button
+          class="projects__filter-btn"
+          [class.projects__filter-btn--active]="activeTag === tag"
+          (click)="filter(tag)">
+          {{ tag }}
+        </button>
+      }
+    </div>
+
+    <!-- Proyectos destacados (featured: true) -->
+    @if (featured.length > 0) {
+      <div class="projects__featured">
+        @for (project of featured; track project.id) {
+          <a [href]="project.url" target="_blank" rel="noopener"
+             class="projects__card projects__card--featured">
+            <div class="projects__card-header">
+              <span class="projects__card-name">{{ project.name }}</span>
+              <span class="projects__status projects__status--{{ project.status }}">
+                {{ statusLabel(project.status) }}
+              </span>
+            </div>
+            <p class="projects__card-desc">{{ project.description }}</p>
+            <div class="projects__tags">
+              @for (tag of project.tags; track tag) {
+                <span class="projects__tag">{{ tag }}</span>
+              }
+            </div>
+            <span class="projects__card-arrow">→</span>
+          </a>
+        }
+      </div>
+    }
+
+    <!-- Resto de proyectos -->
+    @if (rest.length > 0) {
+      <div class="projects__grid">
+        @for (project of rest; track project.id) {
+          <a [href]="project.url" target="_blank" rel="noopener"
+             class="projects__card">
+            <div class="projects__card-header">
+              <span class="projects__card-name">{{ project.name }}</span>
+              <span class="projects__status projects__status--{{ project.status }}">
+                {{ statusLabel(project.status) }}
+              </span>
+            </div>
+            <p class="projects__card-desc">{{ project.description }}</p>
+            <div class="projects__tags">
+              @for (tag of project.tags; track tag) {
+                <span class="projects__tag">{{ tag }}</span>
+              }
+            </div>
+            <span class="projects__card-arrow">→</span>
+          </a>
+        }
+      </div>
+    }
+
+  </div>
+</section>

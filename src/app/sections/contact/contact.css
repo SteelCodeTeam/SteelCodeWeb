@@ -1,0 +1,197 @@
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+  padding-bottom: 0; /* el footer ocupa el fondo */
+}
+
+/* ---- Links principales ---- */
+
+.contact__primary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background-color: var(--color-border);
+  border: 1px solid var(--color-border);
+  margin-block: var(--space-6);
+}
+
+.contact__main-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5);
+  background-color: var(--color-surface);
+  text-decoration: none;
+  transition: background-color var(--transition-normal);
+  gap: var(--space-4);
+}
+
+.contact__main-link:hover {
+  background-color: var(--color-surface-alt);
+}
+
+.contact__main-link-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact__main-link-label {
+  font-family: var(--font-sans);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+  transition: color var(--transition-fast);
+}
+
+.contact__main-link:hover .contact__main-link-label {
+  color: var(--color-accent);
+}
+
+.contact__main-link-sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-muted);
+}
+
+.contact__main-link-arrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xl);
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast),
+  transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.contact__main-link:hover .contact__main-link-arrow {
+  color: var(--color-accent);
+  transform: translateX(6px);
+}
+
+/* ---- Links secundarios ---- */
+
+.contact__secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  background-color: var(--color-border);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-8);
+}
+
+.contact__link {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-alt);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.contact__link:hover {
+  background-color: var(--color-surface);
+}
+
+.contact__link-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-wide);
+  transition: color var(--transition-fast);
+}
+
+.contact__link:hover .contact__link-label {
+  color: var(--color-accent);
+}
+
+.contact__link-sub {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ---- Support ---- */
+
+.contact__support {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-alt);
+  margin-bottom: var(--space-10);
+}
+
+.contact__support-text {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  max-width: 600px;
+}
+
+.contact__support-btn {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent-dim);
+  padding: var(--space-1) var(--space-3);
+  display: inline-block;
+  align-self: flex-start;
+  transition: all var(--transition-normal);
+}
+
+.contact__support-btn:hover {
+  background-color: var(--color-accent-glow);
+  border-color: var(--color-accent);
+}
+
+/* ---- Footer ---- */
+
+.contact__footer {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg-alt);
+  padding-block: var(--space-4);
+  margin-top: auto;
+}
+
+.contact__footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.contact__footer-copy,
+.contact__footer-built {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 560px) {
+  .contact__primary {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

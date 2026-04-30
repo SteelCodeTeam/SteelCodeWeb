@@ -1,0 +1,201 @@
+/* ============================================
+   NAV — Floating navbar
+   ============================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-nav);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background-color var(--transition-slow),
+  border-color var(--transition-slow),
+  backdrop-filter var(--transition-slow);
+}
+
+/* Una vez el usuario hace scroll — fondo con blur */
+.nav--scrolled {
+  background-color: rgba(26, 26, 24, 0.85);
+  border-bottom-color: var(--color-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+/* ---- Logo ---- */
+
+.nav__logo {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.nav__logo span {
+  color: var(--color-text-secondary);
+}
+
+.nav__logo:hover {
+  color: var(--color-accent);
+}
+
+/* ---- Links desktop ---- */
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav__link {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.nav__link:hover {
+  color: var(--color-text-secondary);
+}
+
+.nav__link--active {
+  color: var(--color-text-primary);
+}
+
+.nav__link--active::after {
+  transform: scaleX(1);
+}
+
+/* ---- Burger ---- */
+
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nav__burger-line {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background-color: var(--color-text-primary);
+  transition: transform var(--transition-normal),
+  opacity var(--transition-normal);
+  transform-origin: center;
+}
+
+/* Animación X al abrir */
+.nav__burger-line--open:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.nav__burger-line--open:nth-child(2) {
+  opacity: 0;
+}
+.nav__burger-line--open:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* ---- Menú móvil ---- */
+
+.nav__mobile {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  border-top: 1px solid transparent;
+  background-color: rgba(26, 26, 24, 0.97);
+  backdrop-filter: blur(12px);
+  transition: max-height var(--transition-slow),
+  border-color var(--transition-slow);
+}
+
+.nav__mobile--open {
+  max-height: 500px;
+  border-top-color: var(--color-border);
+}
+
+.nav__mobile-links {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-2) 0;
+}
+
+.nav__mobile-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color var(--transition-fast),
+  background-color var(--transition-fast);
+  text-align: left;
+}
+
+.nav__mobile-link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+}
+
+.nav__mobile-link--active {
+  color: var(--color-accent);
+}
+
+.nav__mobile-index {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  opacity: 0.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .nav__burger {
+    display: flex;
+  }
+
+  .nav__mobile {
+    display: block;
+  }
+}

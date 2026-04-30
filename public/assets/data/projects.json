@@ -1,38 +1,58 @@
-[
-  {
-    "id": "metallics-arts",
-    "name": "Metallics Arts",
-    "description": "Mistborn magic systems fully implemented in Minecraft. Allomancy, Feruchemy and Hemalurgy as real gameplay mechanics inspired by Brandon Sanderson's Cosmere.",
-    "status": "active",
-    "tags": ["Java", "NeoForge", "Minecraft"],
-    "url": "https://github.com/steelcodeteam/metallics-arts",
-    "featured": true
-  },
-  {
-    "id": "simpleauths",
-    "name": "SimpleAuths",
-    "description": "Authentication mod with login/register commands, IP-based multi-account controls, and JPA/Hibernate persistence for secure Minecraft servers.",
-    "status": "active",
-    "tags": ["Java", "NeoForge", "Security"],
-    "url": "https://github.com/steelcodeteam",
-    "featured": true
-  },
-  {
-    "id": "steelcode-news",
-    "name": "SteelCodeNews",
-    "description": "Monthly community newsletter covering FOSS philosophy, esoteric programming languages, hardware libre and open source culture.",
-    "status": "active",
-    "tags": ["Community", "Newsletter"],
-    "url": "https://github.com/steelcodeteam",
-    "featured": false
-  },
-  {
-    "id": "open-requests",
-    "name": "Open Requests",
-    "description": "Need a mod ported or updated? We support open source. Drop by the Discord and we'll talk — no strings attached.",
-    "status": "open",
-    "tags": ["Community", "Open Source"],
-    "url": "https://discord.gg/YHqMTRYAMT",
-    "featured": false
-  }
-]
+{
+  "projects": [
+    {
+      "id": "metallics-arts",
+      "name": "Metallics Arts",
+      "description": "Mistborn magic systems fully implemented in Minecraft. Allomancy, Feruchemy and Hemalurgy as real gameplay mechanics inspired by Brandon Sanderson's books.",
+      "status": "active",
+      "tags": ["Java", "NeoForge", "Minecraft"],
+      "url": "https://github.com/steelcodeteam/metallics-arts",
+      "featured": true
+    },
+    {
+      "id": "stuff-aint-cheap",
+      "name": "Stuff Ain't Cheap",
+      "description": "Nerf and modify the trades of the villagers, so that their best trades are not easily farmable.",
+      "status": "active",
+      "tags": ["Java", "NeoForge", "Minecraft"],
+      "url": "https://github.com/SteelCodeTeam/StuffAintCheap",
+      "featured": true
+    },
+    {
+      "id": "steelcode-news",
+      "name": "SteelCode News",
+      "description": "newsletter published randomly which deals with completely random topics always related to programming",
+      "status": "active",
+      "tags": ["Community", "Newsletter"],
+      "url": "https://github.com/SteelCodeTeam/SteelCodeNewsletter",
+      "featured": false
+    },
+    {
+      "id": "city-stats",
+      "name": "CityStats",
+      "description": "A simple mod for Cities Skylines 2. Show some stats in real time.",
+      "status": "active",
+      "tags": ["C#", "Unity", "Cities Skylines 2"],
+      "url": "https://github.com/SteelCodeTeam/CityStats",
+      "featured": false
+    },
+    {
+      "id": "pico-8-games",
+      "name": "PICO-8 Collection Games",
+      "description": "Collection of retro games created with PICO-8, the fantasy console that simulates the technical limitations of the 80s.",
+      "status": "active",
+      "tags": ["LUA", "Games", "HTML/CSS/JS"],
+      "url": "https://github.com/SteelCodeTeam/PICO-8-Games",
+      "featured": false
+    },
+    {
+      "id": "open-requests",
+      "name": "Open Requests",
+      "description": "Need a mod ported or updated? We support open source. Drop by the Discord and we'll talk — no strings attached.",
+      "status": "open",
+      "tags": ["Community", "Libre Software"],
+      "url": "https://discord.gg/YHqMTRYAMT",
+      "featured": false
+    }
+  ]
+}
