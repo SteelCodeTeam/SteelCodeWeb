@@ -1,0 +1,38 @@
+[
+  {
+    "id": "metallics-arts",
+    "name": "Metallics Arts",
+    "description": "Mistborn magic systems fully implemented in Minecraft. Allomancy, Feruchemy and Hemalurgy as real gameplay mechanics inspired by Brandon Sanderson's Cosmere.",
+    "status": "active",
+    "tags": ["Java", "NeoForge", "Minecraft"],
+    "url": "https://github.com/steelcodeteam/metallics-arts",
+    "featured": true
+  },
+  {
+    "id": "simpleauths",
+    "name": "SimpleAuths",
+    "description": "Authentication mod with login/register commands, IP-based multi-account controls, and JPA/Hibernate persistence for secure Minecraft servers.",
+    "status": "active",
+    "tags": ["Java", "NeoForge", "Security"],
+    "url": "https://github.com/steelcodeteam",
+    "featured": true
+  },
+  {
+    "id": "steelcode-news",
+    "name": "SteelCodeNews",
+    "description": "Monthly community newsletter covering FOSS philosophy, esoteric programming languages, hardware libre and open source culture.",
+    "status": "active",
+    "tags": ["Community", "Newsletter"],
+    "url": "https://github.com/steelcodeteam",
+    "featured": false
+  },
+  {
+    "id": "open-requests",
+    "name": "Open Requests",
+    "description": "Need a mod ported or updated? We support open source. Drop by the Discord and we'll talk — no strings attached.",
+    "status": "open",
+    "tags": ["Community", "Open Source"],
+    "url": "https://discord.gg/YHqMTRYAMT",
+    "featured": false
+  }
+]
