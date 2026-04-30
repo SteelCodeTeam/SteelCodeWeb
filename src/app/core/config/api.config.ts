@@ -1,4 +1,4 @@
-const BASE_URL = 'https://raw.githubusercontent.com/SteelCodeTeam/SteelCodeTeam/main';
+const BASE_URL = 'https://raw.githubusercontent.com/SteelCodeTeam/SteelCodeWeb/master/public/assets/data';
 const BLOG_URL = 'https://raw.githubusercontent.com/SteelCodeTeam/SteelCodeNewsletter/main/index/index.json';
 
 export const API_CONFIG = {
