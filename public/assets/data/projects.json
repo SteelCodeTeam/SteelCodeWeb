@@ -5,7 +5,7 @@
       "name": "Metallics Arts",
       "description": "Mistborn magic systems fully implemented in Minecraft. Allomancy, Feruchemy and Hemalurgy as real gameplay mechanics inspired by Brandon Sanderson's books.",
       "status": "active",
-      "tags": ["Java", "NeoForge", "Minecraft"],
+      "tags": ["Java", "NeoForge", "Modding"],
       "url": "https://github.com/steelcodeteam/metallics-arts",
       "featured": true
     },
@@ -14,7 +14,7 @@
       "name": "Stuff Ain't Cheap",
       "description": "Nerf and modify the trades of the villagers, so that their best trades are not easily farmable.",
       "status": "active",
-      "tags": ["Java", "NeoForge", "Minecraft"],
+      "tags": ["Java", "NeoForge", "Modding"],
       "url": "https://github.com/SteelCodeTeam/StuffAintCheap",
       "featured": true
     },
@@ -32,7 +32,7 @@
       "name": "CityStats",
       "description": "A simple mod for Cities Skylines 2. Show some stats in real time.",
       "status": "active",
-      "tags": ["C#", "Unity", "Cities Skylines 2"],
+      "tags": ["C#", "Modding", "Cities Skylines 2"],
       "url": "https://github.com/SteelCodeTeam/CityStats",
       "featured": false
     },
@@ -50,7 +50,7 @@
       "name": "Open Requests",
       "description": "Need a mod ported or updated? We support open source. Drop by the Discord and we'll talk — no strings attached.",
       "status": "open",
-      "tags": ["Community", "Libre Software"],
+      "tags": ["Community"],
       "url": "https://discord.gg/YHqMTRYAMT",
       "featured": false
     }
