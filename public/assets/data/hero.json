@@ -7,7 +7,7 @@
   ],
   "label": "// small dev team · FLOSS · Community Driven Projects",
   "title": "SteelCode",
-  "titleMuted": "Team",
+  "titleMuted": "\nTeam",
   "subtitle": "We build Minecraft mods, little games, bots for social media\nand community-driven projects.",
   "ctas": [
     { "label": "View on GitHub", "url": "https://github.com/steelcodeteam", "primary": true  },
