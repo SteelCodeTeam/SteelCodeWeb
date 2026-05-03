@@ -24,8 +24,8 @@
   padding: var(--space-5);
   background-color: var(--color-surface);
   text-decoration: none;
-  transition: background-color var(--transition-normal);
   gap: var(--space-4);
+  transition: background-color var(--transition-normal);
 }
 
 .contact__main-link:hover {
@@ -184,6 +184,13 @@
 /* ============================================
    RESPONSIVE
    ============================================ */
+
+@media (max-width: 620px) {
+  .contact__main-link {
+    padding: var(--space-3);
+    gap: var(--space-1);
+  }
+}
 
 @media (max-width: 560px) {
   .contact__primary {
