@@ -107,6 +107,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .stats__item {
+    padding: var(--space-2) var(--space-1);
+  }
+
   .stats__bars {
     gap: 2px;
   }
@@ -121,3 +125,4 @@
     font-size: var(--text-3xl);
   }
 }
+
